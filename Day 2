@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int T;  // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int X, Y, Z;   // Number of 5 rupee coins, number of 10 rupee coins, and cost of each chocolate
+        scanf("%d %d %d", &X, &Y, &Z);
+
+        // Calculate the total amount Chef has
+        int total_amount = (5 * X) + (10 * Y);
+
+        // Calculate the maximum number of chocolates Chef can buy
+        int maximum_chocolates = total_amount / Z;
+
+        printf("%d\n", maximum_chocolates);
+    }
+
+    return 0;
+}
