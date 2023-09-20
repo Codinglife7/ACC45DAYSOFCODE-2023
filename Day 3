@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int T; // Number of test cases
+    scanf("%d", &T);
+
+    while (T--) {
+        int X, Y; // Number of students and chairs
+        scanf("%d %d", &X, &Y);
+
+        // Calculate the minimum number of new chairs needed
+        int min_chairs_needed = (X > Y) ? (X - Y) : 0;
+
+        printf("%d\n", min_chairs_needed);
+    }
+
+    return 0;
+}
